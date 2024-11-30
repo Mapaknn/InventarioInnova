@@ -1,0 +1,464 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C304944D0BC_Messages_Create.Bundle;assembly=C304944D0BC_Messages.F76nJkyy2F1uUPMj3b3s4q2" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Database</x:String>
+      <x:String>UiPath.Database.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.Twilio.Activities.Models</x:String>
+      <x:String>UiPath.Twilio.Activities</x:String>
+      <x:String>UiPath.ContactCenterIntegrations</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.ContactCenterIntegrations</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Twilio.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>C304944D0BC_Messages.F76nJkyy2F1uUPMj3b3s4q2</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1140,5218" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="876,5195" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="ui:DatabaseConnection" Name="DatabaseConnection" />
+        <Variable x:TypeArguments="sd:DataTable" Name="QueryResult" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:DatabaseConnect DisplayName="Connect to Database" sap:VirtualizedContainerService.HintSize="842,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="System.Data.Odbc" ConnectionString="Dsn=CloudSQLInnova;uid=sysadmin;pwd=admin" DatabaseConnection="[DatabaseConnection]" />
+      <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DataTable="[QueryResult]" DisplayName="Run Query" ExistingDbConnection="[DatabaseConnection]" sap:VirtualizedContainerService.HintSize="842,146" sap2010:WorkflowViewState.IdRef="ExecuteQuery_1" Sql="SELECT * FROM alertas WHERE enviada = FALSE;">
+        <ui:ExecuteQuery.Parameters>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:ExecuteQuery.Parameters>
+      </ui:ExecuteQuery>
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[QueryResult]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="842,4874" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="808,4687" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="idEmpresa" />
+                <Variable x:TypeArguments="x:String" Name="descripcionAlerta" />
+                <Variable x:TypeArguments="x:String" Name="calidadAlerta" />
+                <Variable x:TypeArguments="x:String" Name="fechaHoraAlerta" />
+                <Variable x:TypeArguments="x:String" Name="nombreProducto" />
+                <Variable x:TypeArguments="sd:DataTable" Name="QueryProducto" />
+                <Variable x:TypeArguments="x:String" Name="idAlerta" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="774,114" sap2010:WorkflowViewState.IdRef="Assign_10">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[idAlerta]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[CurrentRow("id").ToString]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="774,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[idEmpresa]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[CurrentRow("empresa_id").ToString]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="774,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[descripcionAlerta]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[CurrentRow("descripcion").ToString]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="774,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[calidadAlerta]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[CurrentRow("calidad_alerta").ToString]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="774,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[fechaHoraAlerta]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[CurrentRow("fecha").ToString]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="774,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[nombreProducto]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[descripcionAlerta.Split(":"c)(1).Trim]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DataTable="[QueryProducto]" DisplayName="Run Query" ExistingDbConnection="[DatabaseConnection]" sap:VirtualizedContainerService.HintSize="774,146" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" Sql="[&quot;SELECT id_producto, cantidad_producto FROM inventario WHERE nombre_producto = '&quot;+nombreProducto+&quot;';&quot;]">
+                <ui:ExecuteQuery.Parameters>
+                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                </ui:ExecuteQuery.Parameters>
+              </ui:ExecuteQuery>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[QueryProducto]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="774,3797" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="740,3610" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="idProducto" />
+                        <Variable x:TypeArguments="x:String" Name="cantidadProducto" />
+                        <Variable x:TypeArguments="sd:DataTable" Name="QuerEmail" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="706,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[idProducto]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[CurrentRow("id_producto").ToString]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="706,114" sap2010:WorkflowViewState.IdRef="Assign_7">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[cantidadProducto]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[CurrentRow("cantidad_producto").ToString]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DataTable="[QuerEmail]" DisplayName="Run Query" ExistingDbConnection="[DatabaseConnection]" sap:VirtualizedContainerService.HintSize="706,146" sap2010:WorkflowViewState.IdRef="ExecuteQuery_3" Sql="[&quot;SELECT Email, nombre, telefono FROM usuario WHERE empresa_id = '&quot;+idEmpresa+&quot;';&quot;]">
+                        <ui:ExecuteQuery.Parameters>
+                          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                        </ui:ExecuteQuery.Parameters>
+                      </ui:ExecuteQuery>
+                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[QuerEmail]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="706,3176" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                        <ui:ForEachRow.Body>
+                          <ActivityAction x:TypeArguments="sd:DataRow">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="672,2989" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="emailEmpresa" />
+                                <Variable x:TypeArguments="x:String" Name="nombreUsuario" />
+                                <Variable x:TypeArguments="x:String" Name="fonoUsuario" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="638,114" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[emailEmpresa]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[CurrentRow("Email").ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="638,114" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[nombreUsuario]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[CurrentRow("nombre").ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="638,114" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[fonoUsuario]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[CurrentRow("telefono").ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="638,173" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[emailEmpresa]" />
+                              <If Condition="[calidadAlerta.Contains(&quot;Urgente&quot;)]" sap:VirtualizedContainerService.HintSize="638,2277" sap2010:WorkflowViewState.IdRef="If_3">
+                                <If.Then>
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="536,1033" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACq1X227bOBD9FUKPu67Xl2DTBMhD7dRYd+NaqJz0oQgEWhpbrCVSJSkn3sBAf6O/t1+yQ+oS2XLui7xYM8O5nLnmzhkxiEM1FFxTxkE6p3eOB1QGEZ3HkDOd02/XLWfM00xXhDvnM03AOXW0cFrOOVNpTDcFaWZJoALJUs0EN6QIiIQA2Brkvz9/KZJGggPhWTJHmy1ntknNS6Ul40v89oTUUxkaf7pWF1uimjvHFYoVKl3JEio3zrZVc9g51TKDOsX4ZBw2XmEUX0ClgqtK8Av8yJiEsPy2AV6IgBZWBiI0JqpwF1IkjYBHBbERsgIeHgiY6IhqwhRCsmRKA9onN0xHZHbDYiYex6PXci6EWGWpwWM6/w6BLtwY80AkKO8aU5+tJeWU0lc0zoyQ9cOvgHepjpD6x6NvKwx3Hl9v65m5EDQcbM5hQbNYl2geTpfF+ENgGEVtPSuBFuX/IYVz872fQit0KIVoXNElEC3I3CZUm5+6Vs+Pp6v/dPm+NSAahhK99CVodM/I7Ef3IZcgdYl9n5+0kqYxy7m+YmHTxj2f5PwXW9AaklQ3NVf0QiPjGpYW+JGQCdU5qd97ho0ABx1C8AhWZhSaLL8Fq4WQAfghxKY+msWGXgdAauxC/1yIGCh/hoGE3vqpZAE0dE/oLSk5b4crgZBRP5Pxt9+um6YMkyDzFQgVbWWfNfUWLZcz91V/xPljN1A50ryJZ1WX319xuiosR2d7/VxHULOvQK4Rt4PFPSmlSCH1QInvt/JT1lMcs2YDYEVSOxAP4exWQiQXegXeqRRrFoK/AAjnNFg1jeQCpCbw4qpUONG0D7hKQpxe+xY8wyX33Jer11Rnyg9oHBsPD0HlWRFSirwCqDWNWcj0xsfUMNGM4qrgk4r/2i7D4pxm+uBR9Ylpv+gC9VB7qMa6uvflkpm93h4bl6S16uVl2zZrd407CFTb+/oR55v9Oex3jk6Ojs47g2Fl1x9KoBrag4yHMbT3yC1y6E17dPwn/7TabHqjbnbpTr7353119KPXIlemhgU/67Y75g+f45mQSTjjkGlJ4xZxsznuj79hMxMr4Gc8i81cMbsQFIK5oLGCpxssRxQfjhWCaLml6FhN8MQtFdRYW3PJXHK2YBAaAPEaTlJUaM+Rwu6YY/XxAFwqMQt4smG+cOLkUaFdGxeaxe3B8SITEgNBcsZQUfRO27vuXTVrULBIxKbI2DDDPNm22Dnparn+S+t0AjrCmsNuFYgJej2kQQRh7cKzbtkj1ZTT2Mj+3j3q9nrd9/3jk+P7YhqKOEvs/bUrYK4x2yt5Fe9LO41y3HltocydGkhxg8NyjLvbOIX04uRBZKxZM0HRmot9iiHWoTzZhbL8t6I8jitG/U23/d5El6P3YMM8BO4Uu7ksobzAG4hPvVntXq69vaB8meFvJIMZY7iBXfz02D9I6nY6HdRE1QC1rhDWYYTiJk1FYc3gVg9iEazsKbz9D+WadV6RDQAA" ConnectionId="af3bb756-5ca6-4210-9742-dca1230fb16c" DisplayName="Connector activity" sap:VirtualizedContainerService.HintSize="502,317" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="93639dac-5d0f-3ed6-b16a-2f6712ec83fb">
+                                      <isactr:ConnectorActivity.FieldObjects>
+                                        <isactr:FieldObject Name="_to" Type="FieldArgument">
+                                          <isactr:FieldObject.Value>
+                                            <InArgument x:TypeArguments="x:String">[fonoUsuario]</InArgument>
+                                          </isactr:FieldObject.Value>
+                                        </isactr:FieldObject>
+                                        <isactr:FieldObject Name="from" Type="FieldArgument">
+                                          <isactr:FieldObject.Value>
+                                            <InArgument x:TypeArguments="x:String">+14122183797</InArgument>
+                                          </isactr:FieldObject.Value>
+                                        </isactr:FieldObject>
+                                        <isactr:FieldObject Name="body" Type="FieldArgument">
+                                          <isactr:FieldObject.Value>
+                                            <InArgument x:TypeArguments="x:String">["ALERTA !!, tu producto "+nombreProducto+" Se ha quedado sin stock."]</InArgument>
+                                          </isactr:FieldObject.Value>
+                                        </isactr:FieldObject>
+                                        <isactr:FieldObject Name="Jit_Messages" Type="FieldArgument">
+                                          <isactr:FieldObject.Value>
+                                            <OutArgument x:TypeArguments="uiascb:Messages_Create" />
+                                          </isactr:FieldObject.Value>
+                                        </isactr:FieldObject>
+                                      </isactr:ConnectorActivity.FieldObjects>
+                                    </isactr:ConnectorActivity>
+                                    <umab:GmailApplicationCard Account="inventariorpainnova@gmail.com" ConnectionAccountName="inventariorpainnova@gmail.com" ConnectionId="f410ddf9-6ba3-4279-ad24-ebb3235b8c28" DisplayName="Use Gmail" EmailAddress="inventariorpainnova@gmail.com" sap:VirtualizedContainerService.HintSize="502,656" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_5" Timeout="90" UseConnectionService="False">
+                                      <umab:GmailApplicationCard.Body>
+                                        <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,451" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;Hola! &quot;+nombreUsuario+&quot; se ha emitido una alerta de caracter &quot;+calidadAlerta+&#xA;&quot; para el producto de id &quot;+idProducto+&quot; de nombre &quot;+nombreProducto+&quot; &#xA;esta alerta fue emitida &quot;+fechaHoraAlerta+&quot; &#xA;El stock se ha agotado, porfavor realiza su reposicion !&#xA;La alerta emitida fue : &#xA;&quot;+descripcionAlerta+&quot;&#xA;&#xA;&#xA;Se despide InvenBot :)&quot;]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,391" sap2010:WorkflowViewState.IdRef="SendMailX_4" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="[&quot;Alerta stock de producto &quot;+nombreProducto+&quot; bajo NO-REPLY&quot;]" To="[emailEmpresa]" UseDocumentAsBody="False">
+                                              <umab:SendMailX.Files>
+                                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                              </umab:SendMailX.Files>
+                                              <umab:SendMailX.HtmlBodyFromFile>
+                                                <umabh:HtmlContentArgument FilePath="{x:Null}" HtmlBody="{x:Null}">
+                                                  <umabh:HtmlContentArgument.RuntimeImages>
+                                                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                  </umabh:HtmlContentArgument.RuntimeImages>
+                                                  <umabh:HtmlContentArgument.ValueMappings>
+                                                    <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
+                                                  </umabh:HtmlContentArgument.ValueMappings>
+                                                </umabh:HtmlContentArgument>
+                                              </umab:SendMailX.HtmlBodyFromFile>
+                                            </umab:SendMailX>
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </umab:GmailApplicationCard.Body>
+                                      <umab:GmailApplicationCard.ClientId>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <Literal x:TypeArguments="x:String" Value="" />
+                                        </InArgument>
+                                      </umab:GmailApplicationCard.ClientId>
+                                      <umab:GmailApplicationCard.ClientSecret>
+                                        <InArgument x:TypeArguments="x:String">
+                                          <Literal x:TypeArguments="x:String" Value="" />
+                                        </InArgument>
+                                      </umab:GmailApplicationCard.ClientSecret>
+                                    </umab:GmailApplicationCard>
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="604,1074" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:IfElseIfV2 Condition="[calidadAlerta.Contains(&quot;Normal&quot;)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="570,1014" sap2010:WorkflowViewState.IdRef="IfElseIfV2_3">
+                                      <ui:IfElseIfV2.Else>
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </ui:IfElseIfV2.Else>
+                                      <ui:IfElseIfV2.ElseIfs>
+                                        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
+                                      </ui:IfElseIfV2.ElseIfs>
+                                      <ui:IfElseIfV2.Then>
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="536,716" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <umab:GmailApplicationCard Account="inventariorpainnova@gmail.com" ConnectionAccountName="inventariorpainnova@gmail.com" ConnectionId="f410ddf9-6ba3-4279-ad24-ebb3235b8c28" DisplayName="Use Gmail" EmailAddress="inventariorpainnova@gmail.com" sap:VirtualizedContainerService.HintSize="502,656" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_6" Timeout="90" UseConnectionService="False">
+                                            <umab:GmailApplicationCard.Body>
+                                              <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,451" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;Hola! &quot;+nombreUsuario+&quot; se ha emitido una alerta de caracter &quot;+calidadAlerta+&#xA;&quot; para el producto de id &quot;+idProducto+&quot; de nombre &quot;+nombreProducto+&quot; &#xA;esta alerta fue emitida &quot;+fechaHoraAlerta+&quot; &#xA;La cantidad de producto restante es de &quot;+cantidadProducto+&quot; ten precaucion te podrias quedar sin stock!&#xA;&#xA;Se despide InvenBot :)&quot;]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,391" sap2010:WorkflowViewState.IdRef="SendMailX_5" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="[&quot;Alerta stock de producto &quot;+nombreProducto+&quot; bajo NO-REPLY&quot;]" To="[emailEmpresa]" UseDocumentAsBody="False">
+                                                    <umab:SendMailX.Files>
+                                                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                                    </umab:SendMailX.Files>
+                                                    <umab:SendMailX.HtmlBodyFromFile>
+                                                      <umabh:HtmlContentArgument FilePath="{x:Null}" HtmlBody="{x:Null}">
+                                                        <umabh:HtmlContentArgument.RuntimeImages>
+                                                          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                        </umabh:HtmlContentArgument.RuntimeImages>
+                                                        <umabh:HtmlContentArgument.ValueMappings>
+                                                          <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
+                                                        </umabh:HtmlContentArgument.ValueMappings>
+                                                      </umabh:HtmlContentArgument>
+                                                    </umab:SendMailX.HtmlBodyFromFile>
+                                                  </umab:SendMailX>
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </umab:GmailApplicationCard.Body>
+                                            <umab:GmailApplicationCard.ClientId>
+                                              <InArgument x:TypeArguments="x:String">
+                                                <Literal x:TypeArguments="x:String" Value="" />
+                                              </InArgument>
+                                            </umab:GmailApplicationCard.ClientId>
+                                            <umab:GmailApplicationCard.ClientSecret>
+                                              <InArgument x:TypeArguments="x:String">
+                                                <Literal x:TypeArguments="x:String" Value="" />
+                                              </InArgument>
+                                            </umab:GmailApplicationCard.ClientSecret>
+                                          </umab:GmailApplicationCard>
+                                        </Sequence>
+                                      </ui:IfElseIfV2.Then>
+                                    </ui:IfElseIfV2>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                              <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Run Query" ExistingDbConnection="[DatabaseConnection]" sap:VirtualizedContainerService.HintSize="638,137" sap2010:WorkflowViewState.IdRef="ExecuteQuery_8" Sql="[&quot;UPDATE alertas&#xA;Set enviada = 1&#xA;Where id = &quot;+idAlerta+&quot;;&quot;]">
+                                <ui:ExecuteQuery.Parameters>
+                                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                </ui:ExecuteQuery.Parameters>
+                              </ui:ExecuteQuery>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEachRow.Body>
+                      </ui:ForEachRow>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+      </ui:ForEachRow>
+    </Sequence>
+  </Sequence>
+</Activity>

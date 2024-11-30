@@ -1,0 +1,78 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "contador&Sequence_65",
+        "idEmpresa&Sequence_71",
+        "idProducto&Sequence_87",
+        "idProd&Sequence_87",
+        "cantProducto&Sequence_92",
+        "operacion&Sequence_92",
+        "cantProd&Sequence_92",
+        "idEmp&Sequence_92",
+        "idProducto&Sequence_93",
+        "cantProducto&Sequence_94",
+        "operacion&Sequence_94",
+        "idProd&Sequence_94",
+        "cantProd&Sequence_94",
+        "idEmp&Sequence_94",
+        "idEmpresa&Sequence_97",
+        "idProducto&Sequence_105",
+        "cantProducto&Sequence_107",
+        "operacion&Sequence_107",
+        "idProd&Sequence_107",
+        "cantProd&Sequence_107",
+        "idEmp&Sequence_107",
+        "idProducto&Sequence_106",
+        "cantProducto&Sequence_108",
+        "operacion&Sequence_108",
+        "idProd&Sequence_108",
+        "cantProd&Sequence_108",
+        "idEmp&Sequence_108",
+        "emailSender&Sequence_13",
+        "emailAttachmentName&Sequence_13",
+        "contador&Sequence_63"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "actualizar inventario bd.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "innovaConnection&Sequence_52"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Database Connection.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueryResult&Sequence_109",
+        "databaseConnection_1&Sequence_109",
+        "DatabaseConnectionResult&Sequence_109"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "operacion",
+        "idEmpresa",
+        "cantProducto",
+        "idProducto"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

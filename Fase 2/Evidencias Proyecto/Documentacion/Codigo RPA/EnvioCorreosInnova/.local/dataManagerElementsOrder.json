@@ -1,0 +1,36 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "idProducto&Sequence_4",
+        "cantidadProducto&Sequence_4",
+        "QuerEmail&Sequence_4",
+        "emailEmpresa&Sequence_7",
+        "nombreUsuario&Sequence_7",
+        "fonoUsuario&Sequence_7",
+        "idAlerta&Sequence_3",
+        "QueryProducto&Sequence_3",
+        "nombreProducto&Sequence_3",
+        "fechaHoraAlerta&Sequence_3",
+        "calidadAlerta&Sequence_3",
+        "descripcionAlerta&Sequence_3",
+        "idEmpresa&Sequence_3",
+        "QueryResult&Sequence_2",
+        "DatabaseConnection&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
